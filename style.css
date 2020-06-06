@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e84118;
+}
+
+.search-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.search-box:hover .search-bar {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.search-box:hover .search-btn {
+  background: white;
+}
+
+.search-btn {
+  float: right;
+  text-decoration: none;
+  color: #e84118;
+  width: 40px;
+  height: 40px;
+  transition: 0.4s;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-btn:hover {
+  transform: scale(1.1); /* 可以不用影响其他元素 */
+}
+
+.search-bar {
+  line-height: 40px;
+  color: rgba(136, 133, 133, 0.767);
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  font-size: 16px;
+  width: 0px;
+  transition: 0.4s;
+}
